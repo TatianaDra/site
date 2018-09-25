@@ -1,5 +1,5 @@
 body {
-	font: 20px Tahoma, 'Roboto Slab'
+	font: 13px Tahoma, 'Open Sans'
 }
 
 #wrapper {
@@ -8,7 +8,7 @@ body {
 }
 
 header {
-		padding:  20px 0;
+		padding:  0px 0px;
 
 }
 
@@ -31,4 +31,37 @@ nav li {
 		display: inline-block;
 		padding: 5px 5px;
 		margin: 0;
+}
+
+aside {
+		float: left;
+		width: 150px;
+	
+}
+
+section {
+		margin-left:150px;
+		padding-bottom:0px;
+	
+}
+
+.aside-menu li {
+		font-weight: 100;
+		list-style-type: none;
+
+}
+
+.aside-menu a {
+		color: gray;
+}
+
+h3 {
+		text-align:left
+	
+}
+
+img.emblem {
+	width:100px
+	height:100px
+	
 }
