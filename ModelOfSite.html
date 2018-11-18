@@ -127,11 +127,13 @@ height:0;
                         font-weight:100;
                         font-size:18px;
                         color:#fff;
+						
 			padding:15px 22px 20px 22px;
 			background: url(images/linemenu.png) right no-repeat;
                         -moz-transition: background-color 0.3s 0.01s ease;
                         -o-transition: background-color 0.3s 0.01s ease;
                         -webkit-transition: background-color 0.3s 0.01s ease;
+						
 		}
 		#dropdown_nav li a:hover {
                         background: #000;
@@ -223,6 +225,73 @@ background:#fff;
 color:#555;
 						}
 
+.seporate {
+	margin:0 auto;
+	border: 0px solid #333;
+	background: #fff;
+	width: 116px;
+	height: 29px;
+	margin-bottom: 50px;
+	background: url(images/raz.png) 0px 0px no-repeat;
+			}
+
+.postBox {
+	border: 0px solid #333;
+	background: #fff;
+	width: 700px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 50px;
+		}
+.postBox h2 a {
+	font-family: "Segoe UI Semilight", "Segoe UI", Tahoma, Helvetica, Sans-Serif;
+	color: #000;
+	font-style:normal;
+	font-weight: 100;
+	font-size: 33px;
+	line-height:35px;
+	-moz-transition: all 0.3s 0.01s ease;
+	-o-transition: all 0.3s 0.01s.ease;
+	-webkit-transition: all 0.3s 0.01s ease;
+			}
+.postBox h2 a: hover {
+	color: #0dbfe5;
+					}
+.postBox .textPreview {
+	border: 0px solid #333;
+	width:800px;
+	margin-bottom: 30px;
+					}
+.postBox .textPreview p {
+	margin-top:0;
+					}
+.postBox .postThumb {
+	margin: 0px 0px 15px 0;
+					}
+.postBox .postMeta {
+	padding-bottom: 15px;
+	clear: left;
+	overflow: hidden;
+					}
+					
+.more-link a {
+	border-radius: 3px;
+	background: #0dbfe5;
+	margin-top: 30px;
+	font-weight: 600;
+	color:#fff;
+	font-size: 17px;
+	padding: 6px 25px 9px 25px;
+	-moz-transition: all 0.3s 0.01s ease;
+	-o-transition: all 0.3s 0.01s ease;
+	-webkit-transition: all 0.3s 0.01s ease;
+			}
+.more-link a: hover {
+	background: #000;
+	color: #0dbfe5;
+					}
+		
+						
 .share-new {
 	z-index: 1;
 	position:absolute;
@@ -255,6 +324,9 @@ color:#555;
 	margin-left: 0px;
 					}
 
+
+	
+	
 
 
 
@@ -311,6 +383,9 @@ color:#555;
 </div>
 
 </header>
+<div id="lpblock">
+	<h2>Заголовок</h2>
+</div>
 
 
  <!-- обертка-->
@@ -320,11 +395,27 @@ color:#555;
 		<div id ="content"> <!--выравнивание колонок-->
 
 			<div id ="colLeft"> <!--левая колонка сайта-->
-			
-		
-			
-			
-		</div>
+				<article class="postBox">
+					<div class="postThumb"><a href="#"><img width="800" height="300" src="images/tumb.png"/></a>
+					</div>
+					<h2><a href="#">Здесь может быть любая ссылка</a></h2>
+					<div class="info">Автор
+					</div>
+					<div class ="textPreview">
+					<p>Всем привет, здесь классный пес</p>
+					</div>
+					<div class="more-link"><a href="#">Далее</a>
+					</div>
+				</article>
+				<div class="seporate"</div>
+			</div>
+	<aside id ="colRight">
+	<form method="get" action= "/search" target="_blank">
+	<input name="q" id="form-query" value="" placeholder="Поиск...">
+	<input id="form-querysub" type=submit value="">
+	</form>
+	
+	</aside>
 	</div>
 </section>
 
